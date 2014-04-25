@@ -1,0 +1,696 @@
+
+body {
+    font-family: 微软雅黑, 宋体;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #666;
+}
+
+section {
+    padding-top: 60px;
+    background-color: #fff;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a, select, textarea {
+    vertical-align: top;
+    outline: none !important;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    outline: 0;
+    vertical-align: top;
+    border: 0;
+    max-width: 100.1%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+hr {
+    border-color: #ededed;
+}
+
+ul, ol, dl {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.cRed {
+    color: #F00
+}
+
+.cBlack {
+    color: #000
+}
+
+a {
+    color: #CC9900;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #8B3D3D;
+}
+
+.text1 {
+    border: solid 1px #ccc;
+    height: 44px;
+    padding: 0 13px;
+    line-height: 100%;
+    line-height: 44px;
+}
+
+.btn_S {
+    height: 46px;
+    background-color: #59B200;
+    border-color: #59B200;
+    border: 0 none;
+    border-bottom: 2px solid #468c00;
+    outline-width: 0px;
+    color: #fff;
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 1.3em
+}
+
+.btn_S:hover {
+    opacity: 1;
+}
+
+.btn_S:active {
+    opacity: 1;
+    border-bottom: 0
+}
+
+a.btn_R {
+    width: 220px;
+    height: 50px;
+    display: inline-block;
+    background-color: #59B200;
+    border: 0 none;
+    border-bottom: 2px solid #468c00;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.9;
+}
+
+a.btn_R:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+a.btn_R:active {
+    opacity: 1;
+    border-bottom: 0
+}
+
+a.btn_600 {
+    background-color: #600;
+    outline-width: 0px;
+    color: #fff;
+    opacity: 0.8;
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+    display: block
+}
+
+a.btn_600:hover {
+    opacity: 1;
+}
+
+a.btn_600:active {
+    opacity: 1;
+    border-bottom: 0
+}
+
+.btn_W {
+    height: 46px;
+    background: #FAFAFA url(images/btn_bg.png) repeat-x bottom center;
+    border: 1px solid #ccc;
+    outline-width: 0px;
+    color: #000;
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 1.1em
+}
+
+a.btn_facebook {
+    background-color: #5D79B3;
+    color: #fff;
+    height: 46px;
+    display: inline-block;
+    width: 100%;
+    line-height: 46px;
+    opacity: 0.9;
+}
+
+a.btn_facebook .ico_fb {
+    background: #3B5998 url(images/ico_f.png) no-repeat center center;
+    float: left;
+    width: 46px;
+    height: 46px;
+    margin-right: 40px;
+}
+
+a.btn_facebook:hover {
+    opacity: 1;
+    text-decoration: none
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.all {
+    text-align: left
+}
+
+.alc {
+    text-align: center
+}
+
+.alr {
+    text-align: right
+}
+
+.alm {
+    vertical-align: middle
+}
+
+.c {
+    clear: both
+}
+
+.bg_c2 {
+    background: url(images/line2.png) center center repeat-x;
+    text-align: center
+}
+
+.bg_c2 span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 5px
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px 0 40px 0;
+    background-color: #F5F5F5
+}
+
+.top_notice {
+    background-color: #FFF7A0;
+    color: #f00;
+    line-height: 120%;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0
+}
+
+.header {
+    margin: 0 auto
+}
+
+.topbar {
+    height: 40px;
+    background-color: #000;
+    line-height: 40px;
+    color: #fff
+}
+
+.topbar span {
+    margin: 5px;
+}
+
+.mainNav {
+    background-color: #fff;
+    padding: 20px 0;
+    height: 46px;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.logo {
+    background: url(images/logo.png) 0 0 no-repeat;
+    padding-left: 53px;
+    line-height: 46px;
+    font-size: 2.5em;
+    float: left;
+    color: #000
+}
+
+.nav {
+    float: left;
+    font-size: 1.2em;
+    line-height: 46px;
+    margin-left: 95px;
+}
+
+.nav a {
+    padding: 0 20px;
+    font-weight: 400;
+    color: #333
+}
+
+.nav a.on {
+}
+
+.login_info {
+    float: right;
+    line-height: 48px;
+}
+
+.container {
+    background: #F6EDC6 url(images/bg_02.jpg) center 0 no-repeat;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container #circle {
+    width: 300px;
+    height: 260px;
+    float: left;
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 40px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.container #circle h2 {
+    color: #F00;
+    font-size: 4em;
+    line-height: 150%
+}
+
+.container #circle h3 {
+    font-size: 3em;
+    line-height: 170%
+}
+
+.container #circle em {
+    line-height: 150%;
+    font-size: 2em;
+    font-style: normal;
+}
+
+.container .l_info {
+    margin-left: 340px;
+    padding-top: 35px;
+    color: #fff
+}
+
+.container .l_info h1 {
+    font-size: 2.2em;
+    line-height: 100%;
+    color: #579615;
+    margin-bottom: 30px;
+}
+
+.container .l_info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #9B731C;
+}
+
+.container .l_info p font {
+    background-color: #F5F0D0;
+    display: inline;
+}
+
+.container .l_info p span {
+    font-size: 0.8em;
+}
+
+.table_list {
+}
+
+.table_list h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #333;
+    line-height: 225%;
+    background-color: #fff
+}
+
+.table_list table {
+    font-size: 1.1em;
+    background-color: #CDCDCD
+}
+
+.table_list table th {
+    background-color: #F7F7F7;
+    padding: 5px;
+    text-align: left;
+    line-height: 160%;
+}
+
+.table_list table td {
+    padding: 5px;
+    line-height: 160%;
+    background-color: #fff
+}
+
+.table_list table tr.li0 td {
+    background-color: #FBFCFE;
+}
+
+.table_list2 {
+	background: url(images/logo.png) 0 0 no-repeat;
+    background-color: #FFF;
+	border: 1px dotted #CDCDCD;
+    padding: 10px;
+}
+
+.table_list2 h2 {
+	margin: 0px 0px 0px 40px;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #333;
+    line-height: 210%;
+    background-color:rgb(245,245,245);
+}
+
+.table_list2 table {
+    font-size: 1.2em;
+}
+
+.table_list2 table th {
+    padding: 5px;
+    text-align: left;
+    line-height: 160%;
+    color: #999;
+    font-weight: 100;
+    border-bottom: 1px solid #CCC;
+}
+
+.table_list2 table td {
+    padding: 5px;
+    line-height: 190%;
+    color: #666;
+    border-bottom: 1px solid #CCC;
+}
+
+.login_box {
+	background: url(images/logo.png) 0 0 no-repeat;
+    background-color: #fff;
+    border: 1px dotted #CDCDCD;
+    padding: 10px;
+}
+.login_box h2 {
+	margin: 0px 0px 0px 40px;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #333;
+    line-height: 210%;
+    background-color:rgb(245,245,245);
+}
+
+.login_box .msg {
+    color: #F00;
+}
+
+.login_box ul {
+}
+
+.login_box li {
+    margin-bottom: 15px;
+}
+
+.menu {
+    border-right: 1px solid #ccc;
+    float: left;
+    width: 170px;
+    padding-bottom: 20px;
+}
+
+.menu dl {
+    border-top: 1px solid #ccc;
+    margin-top: 10px
+}
+
+.menu dt {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    line-height: 300%;
+}
+
+.menu dd {
+    padding: 0;
+    margin: 0;
+}
+
+.menu dd a {
+    display: block;
+    color: #823131;
+    padding: 5px 3px;
+}
+
+.menu dd a.on {
+    background: #D8D8B1 url(images/ico_arrows.png) 138px center no-repeat;
+}
+
+.main {
+    margin-left: 190px;
+}
+
+.tit {
+    font-size: 2em;
+    line-height: 200%;
+}
+
+.tab1 {
+    border-bottom: 1px solid #CCCC99;
+    height: 40px;
+}
+
+.tab1 a {
+    display: block;
+    float: left;
+    background-color: #D8D8B1;
+    border: 1px solid #CCCC99;
+    height: 39px;
+    padding: 0 20px;
+    font-size: 1.1em;
+    line-height: 35px;
+    color: #000
+}
+
+.tab1 a.on {
+    background-color: #fff;
+    border-bottom: 0 none;
+    height: 40px;
+    color: #000;
+    font-weight: 400
+}
+
+.deal_box {
+    border: 1px solid #CCCC99;
+    border-top: 0 none;
+    background-color: #fff;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+.hint {
+    background-color: #FFFFCC;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 10px;
+    color: #F00;
+    font-weight: 500;
+}
+
+.text_list {
+    margin-top: 20px;
+}
+
+.text_list li {
+    margin-bottom: 15px;
+}
+
+.text_list li label {
+    width: 190px;
+    display: inline-block;
+    text-align: right;
+}
+
+.text_list li .btn_w {
+    height: 32px;
+}
+
+.fb_box {
+    background-color: #ECF0F7;
+    padding: 10px;
+    line-height: 47px;
+}
+
+.user_pic {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.user_pic img {
+    width: 160px;
+    height: 160px;
+}
+
+.msgbox {
+    padding: 100px 0 150px 0
+}
+
+.msgbox h2 {
+    line-height: 48px;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.msgbox p {
+    line-height: 24px;
+}
+
+.msgbox_ok {
+}
+
+.msgbox_ok span, .msgbox_Failure span, .msgbox_hint span {
+    margin-right: 5px;
+    display: inline-block;
+    background: url(images/apply.png) 0 center no-repeat;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+.msgbox_Failure span {
+    background: url(images/block.png) 0 center no-repeat;
+}
+
+.msgbox_hint span {
+    background: url(images/info.png) 0 center no-repeat;
+}
+
+.footr {
+    background-color: #fff;
+    border-top: 1px solid #CCC;
+}
+
+ .foot_tbl{
+	width: 800px;
+    margin: 0 auto;
+	padding:0;
+}
+
+.foot_tbl table {
+    font-size: 1.2em;
+	border-collapse: collapse;
+}
+
+.foot_tbl table th {
+    text-align:center;
+    line-height: 250%;
+    color: #666;
+    font-weight: 100;
+}
+
+.foot_tbl table td {
+    color: #999;
+	border:none;
+	line-height: 140%;
+	text-align:center;
+	vertical-align:top;
+	border-right:1px dotted #CCC;
+	font-size:0.9em;		
+}
+
+
+#content {
+    position: absolute;
+    left: -150px;
+    top: -115px;
+    width: 300px;
+    height: 300px
+}
+
+.faq {
+}
+
+.faq h3 {
+    font-weight: 700
+}
+
+.faq p {
+}
+
+.get {
+    display: none;
+}
+
+#diagram text {
+    display: none;
+}
+
+#diagram circle {
+    box-shadow: #666 0px 0px 10px;
+}
