@@ -6,4 +6,7 @@
 	require './ThinkPHP/ThinkPHP.php';
 	
 	
+	
+	
+	
 ?>
