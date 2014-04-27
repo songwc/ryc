@@ -1,4 +1,10 @@
 
+
+.layout1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
 body {
     font-family: 微软雅黑, 宋体;
     overflow-x: hidden;
@@ -142,7 +148,7 @@ a.btn_R {
     line-height: 50px;
     text-align: center;
     color: #fff;
-    opacity: 0.9;
+    opacity: 0.75;
 }
 
 a.btn_R:hover {
@@ -250,11 +256,12 @@ a.btn_facebook:hover {
 
 .wrap {
     width: 960px;
+    min-height: 400px;
     margin: 0 auto;
 }
 
 .content {
-    padding: 20px 0 40px 0;
+    padding: 15px 0 40px 0;
     background-color: #F5F5F5
 }
 
@@ -306,12 +313,23 @@ a.btn_facebook:hover {
 }
 
 .nav a {
-    padding: 0 20px;
+    padding: 0 15px;
     font-weight: 400;
     color: #333
 }
 
 .nav a.on {
+}
+
+.qqlogin {
+    float: right;
+    background: url(images/icon.gif) no-repeat;
+    background-color: red;
+    background-position: 0 -83px;
+    margin-top: 5px;
+    width: 170px;
+    height: 32px;
+    text-indent: -99em;
 }
 
 .login_info {
@@ -416,19 +434,19 @@ a.btn_facebook:hover {
 }
 
 .table_list2 {
-	background: url(images/logo.png) 0 0 no-repeat;
+    background: url(images/logo.png) 0 0 no-repeat;
     background-color: #FFF;
-	border: 1px dotted #CDCDCD;
+    border: 1px dotted #CDCDCD;
     padding: 10px;
 }
 
 .table_list2 h2 {
-	margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 40px;
     font-size: 1.6em;
     font-weight: 400;
     color: #333;
     line-height: 210%;
-    background-color:rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
 }
 
 .table_list2 table {
@@ -452,18 +470,19 @@ a.btn_facebook:hover {
 }
 
 .login_box {
-	background: url(images/logo.png) 0 0 no-repeat;
+    background: url(images/logo.png) 0 0 no-repeat;
     background-color: #fff;
     border: 1px dotted #CDCDCD;
     padding: 10px;
 }
+
 .login_box h2 {
-	margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 40px;
     font-size: 1.6em;
     font-weight: 400;
     color: #333;
     line-height: 210%;
-    background-color:rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
 }
 
 .login_box .msg {
@@ -474,7 +493,12 @@ a.btn_facebook:hover {
 }
 
 .login_box li {
-    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.login_box span {
+    float: right;
 }
 
 .menu {
@@ -514,8 +538,7 @@ a.btn_facebook:hover {
 .main {
     margin-left: 190px;
 }
-
-.tit {
+.#ffffff {
     font-size: 2em;
     line-height: 200%;
 }
@@ -636,19 +659,19 @@ a.btn_facebook:hover {
     border-top: 1px solid #CCC;
 }
 
- .foot_tbl{
-	width: 800px;
+.foot_tbl {
+    width: 800px;
     margin: 0 auto;
-	padding:0;
+    padding: 0;
 }
 
 .foot_tbl table {
     font-size: 1.2em;
-	border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 .foot_tbl table th {
-    text-align:center;
+    text-align: center;
     line-height: 250%;
     color: #666;
     font-weight: 100;
@@ -656,35 +679,52 @@ a.btn_facebook:hover {
 
 .foot_tbl table td {
     color: #999;
-	border:none;
-	line-height: 140%;
-	text-align:center;
-	vertical-align:top;
-	border-right:1px dotted #CCC;
-	font-size:0.9em;		
+    border: none;
+    line-height: 140%;
+    text-align: center;
+    vertical-align: top;
+    border-right: 1px dotted #CCC;
+    font-size: 0.9em;
 }
 
-
+/*
 #content {
     position: absolute;
     left: -150px;
     top: -115px;
     width: 300px;
-    height: 300px
+    height:300px;
 }
+*/
 
 .faq {
+	
+}
+.faq span{
+	font-weight:normal;
+	font-size:90%;
+	float:right;	
+	color:#666666;		
 }
 
 .faq h3 {
     font-weight: 700
 }
 
+
 .faq p {
 }
 
 .get {
     display: none;
+}
+
+.log-qq {
+    display: block;
+    width: 170px;
+    height: 32px;
+    background-position: 0 -83px;
+    text-indent: -99em;
 }
 
 #diagram text {
@@ -694,3 +734,389 @@ a.btn_facebook:hover {
 #diagram circle {
     box-shadow: #666 0px 0px 10px;
 }
+
+/*用户中心*/
+.mem-sidebar dt span,.mem-sidebar dt a,.mem-sidebar dd a,.mem-deal{background: url(images/icon.png) no-repeat;}
+.mem-wrap{
+    position: relative;
+    width: 900px;
+	height:auto;
+    margin: 20px auto;
+}
+
+.mem-sidebar{
+    border: 1px solid #DDD;
+    background: #F6F6F6;
+}
+
+.mem-sidebar dl{position: relative}/*change - add*/
+.mem-sidebar dt,.mem-sidebar dd{
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+}
+.mem-sidebar a,.mem-sidebar span{
+    display: block;
+    width: 110px;
+    padding-left: 46px;
+    border-left: 4px solid #F6F6F6;
+    color: #555;
+}
+.mem-sidebar dd.current,.mem-sidebar dt.current{background: #FFF; border-right: 1px solid #FFF; z-index: 100; }
+.mem-sidebar .current a{border-color:#977a29;}
+.mem-sidebar dt{border-bottom: 1px solid #DDD; font: bold 16px/45px "微软雅黑";}
+.mem-sidebar dd{ border-bottom: 1px dashed #DDD; font: normal 14px/45px "微软雅黑";
+position:relative;
+left:-40px;
+}
+.mem-sidebar dt.my-trade span{background-position: 20px 15px;}
+.mem-sidebar dt.my-money span{background-position: 20px -20px;}
+.mem-sidebar dt.my-setting span{background-position: 20px -57px;}
+.mem-sidebar dt.my-deal a{background-position: 20px -98px;}
+.mem-sidebar dt.my-jtb a{background-position: 20px -247px;}
+.mem-sidebar dd a{background-position: 25px -170px;}
+.mem-sidebar dd.current a{background-position: 25px -137px;}
+.mem-sidebar dd a:hover{background:#EbEbEb url(images/icon.png) no-repeat  25px -170px; border-color:#EbEbEb;/*change*/ }
+.mem-sidebar dd.current a:hover{background:url(images/icon.png) no-repeat  25px -137px;border-color:#977a29;/*change*/}
+.mem-main{/*change*/
+	border: 1px solid #DDDDDD;
+    border-left: none;
+    background:  #FFF;
+    min-height: 500px;
+    padding: 15px;
+    color: #666;
+}
+.mem-hd{
+    font: normal 22px/28px "微软雅黑",arial;
+    padding-left: 10px;
+    border-left: 5px solid #999;
+    color: #ABABAB;
+    margin-bottom: 20px;
+}
+.mem-deal{padding-left: 30px; border-left:none;background-position: 0 -211px;}
+.mem-main .con{
+    margin: 20px;
+}
+.mem-main input{border:  1px solid #DDD; border-radius: 3px; height: 28px; line-height: 28px;}
+.mem-main input.nobd{border:none; border-radius: 0px; height: auto; line-height: auto;}
+.deal-status{margin: 20px 0; font-size: 14px;}
+.deal-status label{margin-right: 20px;}
+.deal-area{width: 473px; height: 103px; padding:5px; border: 1px solid #DDD; border-radius: 3px; margin-top: 10px;}
+.mem-main .btn-brown{
+    display: block;
+    margin: 50px;
+    width: 130px;
+}
+.mem-tip{
+    padding: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    background: #F9F7F2;
+    color: #8a690E;
+    border: 1px solid #E8DFC6;
+    margin-bottom: 20px;
+}
+.mem-main .tb-form{width: 750px;}
+.mem-main .tb-form p{margin-top: 10px; font-size: 14px;}
+.mem-main .tb-form p.cred{margin-top: 0;}
+.mem-main .tb-form .btn-brown{margin: 0;}
+.cgray{color: #969696;}
+.cash-form{
+    color: #333;
+}
+.cash-form li{
+    margin: 15px;
+    font-size: 14px;
+    font-family: arial;
+}
+.mem-status{
+    height: 45px;
+    border: 1px solid;
+    font: bold 14px/45px arial;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+.mem-status .cgray{color: #999; padding-left: 10px;}
+.mem-status span,.mem-status a{font-weight: normal;}
+.mem-status a{color: #08c;}
+.mem-status.error{
+    color: #B94A48;
+    background: #F2DEDE;
+    border-color: #EED3D7;
+}
+.mem-status.right{
+    color: #468847;
+    background: #DFF0D8;
+    border-color: #D6E9C6;
+}
+.mem-status p{
+    padding-left: 35px;
+    background-position: 0 -1224px;
+}
+.mem-status.error p{background-position: 0 -1172px;}
+.level{
+    display: inline-block;
+    height: 23px;
+}
+.level i{
+    float: left;
+    display: inline-block;
+    width: 54px;
+    height: 23px;
+    overflow: hidden;
+    margin: 6px 1px;
+    color: #fff;
+    font: bold 12px/23px arial;
+    background-position: 0 -1305px;
+    text-align: center;
+}
+.level i.on{background-position: 0 -1280px}
+/*我的交易*/
+.mem-log-list{text-align: center; width: 100%; font-size: 14px; margin-top: 10px;}
+.mem-log-list th{
+    height: 30px;
+    line-height: 30px;
+    background: #f6f6f6;
+    text-align: center;
+}
+.mem-log-list td{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #DDD;
+}
+.mem-tab{
+    display: block;
+    border-bottom: 1px solid #DDD;
+    height: 35px;
+    padding-left: 30px;
+    _overflow: hidden;
+}
+.mem-tab ul{position: relative;}/*change - add*/
+.mem-tab li{
+    float: left;
+    display: inline;
+    color: #888;
+    background: #FAFAFA;
+    height: 34px;
+    border-top: 1px solid #DDD;
+    font:bold 14px/32px arial;
+    border-left: 1px solid #DDD;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.mem-tab li a{color:#888;}
+.mem-tab li.last{border-right:1px solid #DDD; }
+.mem-tab li.on{
+    border-bottom: 1px solid #FFF;
+    background:#FFF ;
+    color: #333;
+}
+.mem-tab li.on a{color:#333;}
+
+/*交易市场*/
+.cash-list{
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    margin-bottom:0px;
+}
+.cash-list li{
+    float: left;
+    display: inline;
+    width: 108px;
+    padding: 3px 0px;
+    height: 44px;
+    overflow: hidden;
+    text-align: center;
+    color: #333;
+    line-height: 24px;
+    background: #F9F7F2;
+    border: 1px solid #E8DFC6;
+    margin-right: 15px;
+    _margin-right:10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    _margin-bottom:10px;
+}
+.cash-list li p{width:auto;}
+.cash-list li a{color: #333;}
+.cash-list li span{font-size: 14px;display: block;}
+.cash-list li.on{background: #9c8033;}
+.cash-list li.on span{color: #FFF;}
+.cash-list li.on a{color: #FFF}
+.market-hd{
+    height: 65px;
+    overflow: hidden;
+    line-height: 65px;
+    background: url(imgs/repeat.png) repeat-x;
+    font-weight: bold;
+    font-family: "微软雅黑",arial;
+    border:1px solid #ddd;
+}
+.market-hd h2{font-size: 25px; margin: 0 15px; color: #333; font-weight: normal;}
+.market-hd p{font-size: 25px; color: #F45000; margin: 0 10px;}
+.market-hd p span{font-size: 18px;}
+.market-hd ul{
+    display: block;
+    height: 40px;
+    line-height: 20px;
+    margin: 13px 20px;
+    color: #333;
+}
+.market-hd li span{color: #f45000; display: block}
+.market-hd li{
+    float: left;
+    display: inline;
+    margin-right: 40px;
+    font-size: 14px;
+}
+.market-chart{
+    width: 970px;
+    margin: 20px auto;
+    margin-top: 0px;
+    padding: 15px;
+    background: #FFF;
+    border:1px solid #ddd;
+}
+.market-chart .hd{
+    position: relative;
+    z-index: 1;
+    height: 40px;
+    border-bottom: 2px solid #DDD;
+}
+.market-chart .hd h3{
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+    font:normal 24px/40px "微软雅黑";
+    color: #333;
+    padding-left: 34px;
+    border-bottom: 2px solid #977a29;
+    background-position: 0 -1348px;
+}
+.market-chart .con{width:720px;margin: 10px 0; height:340px; float: left;}
+.market-chart .rightcon{float: right; width: 220px;}
+.market-chart .rightcon p{margin-top: 20px; line-height: 200%;}
+.market-chart .rightcon p span.pri{font-size:25px;color: #F45000; }
+.market-chart .rightcon p span.num{font-size:25px;color: #265da0; }
+.market-bleft{
+    width: 1000px;
+    overflow: hidden;
+}
+.market-deal{
+    border: 1px solid #DDD;
+    background: #f7f5f0;
+    padding: 15px 0;
+}
+.market-deal h4{
+    height: 35px;
+    padding-left: 10px;
+    border-left: 5px solid;
+    font:  bolder 25px/35px "微软雅黑",arial;
+}
+.market-deal .market-buy h4{ border-color: #E4271B; color: #E4271B;}
+.market-deal .market-sell h4{ border-color: #29990B; color: #29990B;}
+.market-sell{ width: 498px;}
+.market-buy{width:498px;border-right: 1px solid #DDD;}
+.market-deal table{
+    width: 100%;
+    margin: 10px auto;
+}
+.market-deal th,.market-deal td{padding: 5px;  color: #666;}
+.market-deal th{text-align: right;font-size: 14px;}
+.market-deal input{
+    width: 250px;
+    height: 28px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+.market-buy .key{color: #B2403F; font-weight: bold;}
+.market-sell .key{color: #02a902; font-weight: bold;}
+.market-deal button{
+    display: block;
+    height: 45px;
+    width: 260px;
+    overflow: hidden;
+    margin: 10px auto;
+    font: normal 16px/45px "微软雅黑",arial;
+    color: #FFF;
+    background: url(imgs/repeat.png) repeat-x;
+    border: none;
+}
+.market-deal .inputdisabled{
+    width: auto;
+     font: normal 14px/30px "微软雅黑",arial;
+     margin: 10px auto;
+     display: block;
+     padding:2px 10px;
+     height:auto;
+}
+.market-buy button{background-position: 0 -69px;}
+.market-sell button{background-position: 0 -119px;}
+.savebutton{
+    height: 30px;
+    font: normal 12px/30px "微软雅黑",arial;
+    color: #FFF;
+    padding:0px 20px;
+    background: #977a29;
+    cursor: pointer;
+    border: none;
+}
+
+/*最新成交*/
+.market-ndeal{
+    width: 998px;
+    overflow: hidden;
+    border: 1px solid #DDD;
+    background: #f7f5f0;
+}
+.market-hd1{
+    height: 34px;
+    overflow: hidden;
+    background: url(imgs/repeat.png) repeat-x 0 -169px;
+    font: bold 14px/34px "微软雅黑",arial;
+    padding-left: 10px;
+    border-bottom: 1px solid #DDD;
+}
+.market-ndeal td,.market-ndeal th{
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-bottom: 1px solid #DDD;
+    color: #333;
+}
+.market-ndeal th{background: #f2ece9;}
+.market-ndeal .key{color: #F48087;}
+.market-ndeal .sell .key{color: #008087;}
+.market-bleft .market-ndeal{
+    margin-top: 15px;
+}
+.market-bleft .market-ndeal .tb-wrap{/*change*/
+    display: block;
+    width: 499px;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.market-bleft .market-ndeal table.fn-left{border-right: 1px solid #DDD;}
+
+/************************   K线 ************/
+#js-date-selector{width:auto; height:auto; overflow:hidden;float: right;margin-top: 6px;}
+#js-date-selector span{display:block; float:left; height:20px;  width:auto; overflow:hidden;background:#f5f5f5;border:#dfdfdf 1px solid;padding:0 10px;margin-right:5px;cursor:pointer;}
+#js-date-selector span:hover,#js-date-selector span.hoverbg{background:#e3d7b7; border:#c7ab5e 1px solid;}
+
+/*CSS page style pagination*/
+.page {MARGIN: 3px; PADDING: 3px;}
+.page A {BORDER: #eee 1px solid; PADDING: 5px; MARGIN: 2px;  COLOR: #977a29; TEXT-DECORATION: none}
+.page A:hover,.page A:active  {BORDER: #999 1px solid;  COLOR: #666; }
+.page .current{BORDER: 0px; padding:5px; FONT-WEIGHT: bold;MARGIN: 2px; BACKGROUND-COLOR: #977a29;color:#fff;
+}
+.page .disabled {BORDER: #eee 1px solid; PADDING: 5px; MARGIN: 2px; COLOR: #ddd; }    
+/*//首页图片轮显*/
+.slideBox{ width:1000px; height:230px; overflow:hidden; position:relative;}
+.slideBox .hd{ height:20px; overflow:hidden; position:absolute; right:10px; bottom:10px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:8px;  width:20px; height:20px; line-height:18px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#b96c07; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd img{ width:1000px; height:230px;}

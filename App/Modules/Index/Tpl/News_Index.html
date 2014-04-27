@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>新闻中心</title>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+    </head>
+    <body>
+        <include file="./App/Modules/Index/Tpl/header.html" />
+        <div class="content">
+            <div class="wrap">
+                <h1 class="tit alc" style="margin:30px;">全部新闻</h1>
+                <div class="faq" style="margin-left:100px;margin-right:100px;">
+                    <foreach name='news' item='v'>
+                        <h3 style="margin-top:20px;margin-bottom:5px;"><a href="NewsDetail/id/{$v.id}">{$v.title}</a><span>{$v.createtime}</span></h3>
+                      	{$v.content}                   
+                    </foreach>
+                </div>
+            </div>
+        </div>
+        <include file="./App/Modules/Index/Tpl/footer.html" />
+    </body>
+</html>

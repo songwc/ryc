@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta charset="utf-8">
-        <title>如意币</title>
+        <title>如意币交易平台</title>
         <meta name="description" content="ruyicoin">
         <meta name="author" content="ruyicoin">
         <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
@@ -17,24 +17,7 @@
         </script>
     </head>
     <body>
-        	<div class="header">
-		<div class="topbar">
-			<div class="wrap">
-            <div class="fl">
-				<span>The newest Purchasing Price:0 BTC</span></div>
-			<div class="fr">
-				<span>Usable BTC:0.00000</span><span>SC:0.00000</span><span>Total Asset: 0.00000 (BitCoin)</span></div>
-                </div>
-		</div>
-		<div class="mainNav">
-        <div class="wrap">
-			<a href="__ROOT__" ><div class="logo" title="SandCoin">如意币</div></a>
-			<div class="nav">
-            	<a href="__ROOT__" >网站首页</a><a href="__TMPL__Index/tc.html">交易中心</a><a href="__TMPL__Index/uc.html" >用户中心</a><a href="__TMPL__Index/news.html" >新闻中心</a><a href="__TMPL__Index/help.html" >帮助中心</a>
-            </div>			
-            </div>
-		</div>
-</div>
+        <include file="./App/Modules/Index/Tpl/header.html" />
         <div class="container">
             <div class="wrap" style="position: relative;">
                 <div id="content">
@@ -80,83 +63,45 @@
         </div>
         <div class="content">
             <div class="wrap">
-                <div class="table_list2 fl" style="width:600px">
-                	
-                    <h2>最近交易 </h2>
-                    <table id="list" width="100%" border="0" cellpadding="0" cellspacing="0">
-                        <tr id='fs'>
-                            <th width="140">
-                                交易时间
-                            </th>
-                            <th>
-                                数量
-                            </th>
-                            <th>
-                                价格
-                            </th>
-                            <th>
-                                类型
-                            </th>
-                            <th>
-                                总额
-                            </th>
-                        </tr>
-                    </table>
-                </div>	
-                <div class="login_box fr" style="width:290px">
-                	<h2 >新闻公告</h2>
-                	<ul class="news">                		
-						<li>test</li>
-                	</ul>
+                <div style="height:400px;">
+                    <div class="table_list2 fl" style="width:600px;height:100%;">
+                        <h2>最近交易 </h2>
+                        <table id="list" width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr id='fs'>
+                                <th width="140">
+                                    交易时间
+                                </th>
+                                <th>
+                                    数量
+                                </th>
+                                <th>
+                                    价格
+                                </th>
+                                <th>
+                                    类型
+                                </th>
+                                <th>
+                                    总额
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="login_box fr" style="width:290px;height:100%;">
+                        <h2>新闻公告</h2>
+                        <ul class="news">
+                            <foreach name="news" item="v">
+                                <li>
+                                <a href='__APP__/Index/News/NewsDetail/id/{$v.id}'>{$v.title}</a>
+                                <span>{$v.createtime}</span>
+                            </foreach>
+                        </ul>
+                    </div>
                 </div>
                 <div class="c">
-                </div>	
+                </div>
             </div>
         </div>
-        <div class="footr">
-    <div class="foot_tbl">
-        <table>
-            <th>
-                官方q群
-            </th>
-            <th>
-                网站支持
-            </th>
-            <th>
-                安全认证
-            </th>
-            <th>
-                关于网站
-            </th>
-            <tr>
-                <td width=150px;>
-                    一群：2222222222
-                    <br/>
-                    一群：2222222222
-                    <br/>
-                    一群：2222222222
-                    <br/>
-                </td>
-                <td width=150px;>
-                                        管理：2222222222<br/>
-										   技术：2222222222<br/>
-										      财务：2222222222<br/>
-                </td>
-                <td width=150px;>
-                        <img style="border: 0px; margin: 0px; padding: 0px;" src="https://seal.wosign.com/Signature/Profiles/Icon/CN/OV_tp1_cn.jpg">
-					 
-                </td>
-                <td style="border:none; text-align:left;">
-                   电话：4001231111<br/>
-				   地址：湖南省长沙市枫林三路105号<br/>
-				   备案：点击查询备案信息<br/>
-				   法律支持：ddddd律师<br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
-
+        <include file="./App/Modules/Index/Tpl/footer.html" />
         <script>
             
             var n = 1;
