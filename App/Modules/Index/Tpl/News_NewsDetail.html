@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>新闻中心</title>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+    </head>
+    <body>
+        <include file="./App/Modules/Index/Tpl/header.html" />
+        <div class="content">
+            <div class="wrap">
+                <h1 class="tit alc" style="margin-top:30px;margin-left:100px;margin-right:100px;margin-bottom:30px;text-align:center;">{$news[0]['title']}<span style="float:right;font-size:80%;">{$news[0]['createtime']}</span></h1>
+                <div class="faq" style="margin-left:100px;margin-right:100px;">
+                    {$news[0]['content']}
+                </div>
+            </div>
+        </div>
+        <include file="./App/Modules/Index/Tpl/footer.html" />
+    </body>
+</html>

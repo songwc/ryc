@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>用户中心</title>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+        <script src="__PUBLIC__/js/jquery.min.js">
+        </script>
+		
+        <script>
+            $(document).ready(function(){
+                $("#sidebaritem2").addClass('current');
+            });
+        </script>
+    </head>
+    <body>
+        <include file="./App/Modules/Index/Tpl/header.html" />
+        <div class="content">
+            <div class="mem-wrap">
+                <div class='mem-sidebar' style='width:160px;min-height:500px;float:left;'>
+                    <dl>
+                        <dt class="my-trade">
+                            <span>用户中心</span>
+                        </dt>
+                        <foreach name='menus' item='v'>
+                            <dd id='sidebaritem{$v.id}'>
+                                <a href="__APP__/{$v.url}">{$v.mname}</a>
+                            </dd>
+                        </foreach>
+                    </dl>
+                </div>
+                <div class='mem-main' style='float:right;width:707px;min-height:470px;'>
+                    <h2 class="mem-hd mem-deal">充值中心</h2>
+                    <div class="con">
+                        <p class="mem-tip">
+                            买入挂单总额：<span class="cred">0</span>元 &nbsp;&nbsp; 买入挂单总量：<span class="cgreen">0</span>个币 &nbsp;&nbsp;| &nbsp;&nbsp; 卖出挂单总额：<span class="cred">0</span>元  &nbsp;&nbsp; 卖出挂单总量：<span class="cgreen">0</span>个币
+                        </p>
+                    </div>
+                </div>
+                <div style='clear:both;'>
+                </div>
+            </div>
+        </div>
+        <include file="./App/Modules/Index/Tpl/footer.html" />
+    </body>
+</html>
